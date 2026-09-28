@@ -1,4 +1,4 @@
-package Header;
+package Header_Test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,8 +27,6 @@ public class Developers_Element {
 		Thread.sleep(2000);
 		dr.navigate().back();
 		dr.navigate().refresh();
-//		
-		
 	}
 
 }
