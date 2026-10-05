@@ -23,7 +23,7 @@ public class Developers_Element {
 		
 		dr.findElement(By.xpath("//a[@aria-controls=\"mega-sub-menu-170\"]")).click();
 //		dr.findElement(By.xpath("//a[@aria-current=\"page\"]/parent::li[@id=\"mega-menu-item-184")).click();
-		dr.findElement(By.xpath("//a[@aria-current=\"page\"]")).click();
+		dr.findElement(By.xpath("//a[@class='mega-menu-link']/parent::li[@id='mega-menu-item-184']")).click();
 		Thread.sleep(2000);
 		dr.navigate().back();
 		dr.navigate().refresh();
