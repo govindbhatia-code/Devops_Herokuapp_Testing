@@ -9,7 +9,7 @@ public class XPATHManager {
 
     static {
         try {
-            FileInputStream fs = new FileInputStream("src/properties/Xpath.properties");
+            FileInputStream fs = new FileInputStream("src/main/java/com/devops/properties/Xpath.properties");
             properties.load(fs);
         } catch (IOException e) {
             e.printStackTrace();
@@ -17,6 +17,8 @@ public class XPATHManager {
     }
 
     public static String getXpath(String key) {
+        // properties.setProperty(key, key)
         return properties.getProperty(key);
+
     }
 }
